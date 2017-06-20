@@ -1,0 +1,29 @@
+{% extends 'administracja_publiczna/base_no_img.html' %}
+{% load staticfiles %}
+{% block content %}
+
+    <main>
+        <div class="grey-bg-row">
+            <article class="single-post grey-border">
+                <img src="{{ post.post_img.url }}" class="img-responsive one-post-img">
+                <div class="just-extra-horisontal-margin">
+
+                    <h1>{{ post.title }}</h1>
+
+                    {% if post.published_date %}
+                        <p class="text-align-center post-date post-date-post">
+                            <i class="fa fa-calendar post-icon" aria-hidden="true"></i> {{ post.published_date }}
+                        </p>
+                    {% endif %}
+
+                    <p>{{ post.text|linebreaksbr }}</p>
+
+                    <br>
+
+                </div>
+            </article>
+        </div>
+    </main>
+
+
+{% endblock %}

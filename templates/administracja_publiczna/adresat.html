@@ -1,0 +1,172 @@
+{% extends "administracja_publiczna/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<!-- main content -->
+
+{#<div class="panel-heading">#}
+{#    <ul class="nav nav-tabs ul-tabs">#}
+{#        <li style="margin: 10px;"><b>Pola EWI:</b></li>#}
+{#        <li class="dropdown">#}
+{#            <a href="#" data-toggle="dropdown">Wybierz produkt <span class="caret"></span></a>#}
+{#            <ul class="dropdown-menu" role="menu">#}
+{#                <li><a href="#tab4default" data-toggle="tab">Default 4</a></li>#}
+{#                <li><a href="#tab5default" data-toggle="tab">Default 5</a></li>#}
+{#                <li class="active"><a href="#tab1default" data-toggle="tab">Default 1</a></li>#}
+{#                <li><a href="#tab2default" data-toggle="tab">Default 2</a></li>#}
+{#                <li><a href="#tab3default" data-toggle="tab">Default 3</a></li>#}
+{#            </ul>#}
+{#        </li>#}
+{#    </ul>#}
+{#</div>#}
+
+
+            <p style="margin-left: 15px; color: #8d9093; margin-top: 10px;">Strona główna > Produkty > Turysta</p>
+<div class="white-bg-row">
+    <div class="content-row">
+        <div class="row">
+            <div class="extra-top-margin-30">
+
+                <div class="col-md-8 col-sm-7 main-content-66-procent">
+
+
+
+                <div class="product-icons">
+
+                    <div class="product-icon">
+                        <img src="{% static "img/icons/region-alt.png" %}" alt="region">
+                        <p><b>Promój swój region nowoczesną aplikacją</b></p>
+                    </div>
+
+                    <div class="product-icon">
+                        <img src="{% static "img/icons/kalendarz-alt.png" %}" alt="kalendarz">
+                        <p><b>Informuj o trwających wydarzeniach w gminie</b></p>
+                    </div>
+
+                    <div class="product-icon">
+                        <img src="{% static "img/icons/trasa-alt.png" %}" alt="trasa">
+                        <p><b>Planuj wycieczki z naszą aplikacją</b></p>
+                    </div>
+
+                </div>
+
+
+                    <p>Narzędzie umożliwia zarzadzanie bazą adresową w gminie w formie tabelarycznej i mapowej, zgodnie
+                        z modelem pojęciowym danych Rozporządzenia Ministra Administracji i Cyfryzacji z dnia 9 stycznia
+                        2012 r. w sprawie ewidencji miejscowości, ulic  i adresów oraz z danymi PRNG. Ewidencja
+                        prowadzona jest w odniesieniu do działek ewidencyjnych z możliwością edycji, usuwania i
+                        rejestrowania nowych obiektów.</p>
+
+
+                    <div class="h2-section">
+                        <h2 class="h2-section">Zalety systemu</h2>
+                        <p>Ważnym aspektem funkcjonowania każdej jednostki samorządu terytorialnego jest zadowolenie
+                            interesantów oraz sprawne zarządzanie  gminą. Osiągnięcie tego efektu ułatwiają kompleksowe
+                            narzędzia ujęte w Samorządowej Platformie Danych Przestrzennych. </p>
+                        <p>SPDP, dzięki rozwiązaniom desktopowym gwarantuje bezpieczeństwo oraz dostęp do danych
+                            offline. Możliwości rozwijania funkcjonalności systemu daje modułowa budowa, która w
+                            połączeniu z rozwiązaniami webowymi, tworzy nowoczesny wizerunek gminy.</p>
+                        <p>Platforma wspomaga administrowanie gminą, skraca czas oczekiwania na wydanie dokumentów dla
+                            mieszkańca, usprawniając codzienną pracę urzędu.  Intuicyjnie zbudowane moduły, pozwalają
+                            pracownikom instytucji samorządowych w krótkim czasie uzyskiwać niezbędne dane. Pozwala to
+                            operować na obiektach w oparciu o mapę oraz generować niezbędne informacje do wsparcia
+                            procesu podejmowania decyzji. </p>
+                    </div>
+
+
+                    <div class="h2-section">
+                        <h2 class="h2-section">Funkcjonalności aplikacji</h2>
+{#                        <figure class="figure">#}
+{#                            <img src="{% static 'img/test.jpg' %}" class="figure-img img-fluid rounded"#}
+{#                                 alt="A generic square placeholder image with rounded corners in a figure.">#}
+{#                            <figcaption class="figure-caption">A caption for the above image.</figcaption>#}
+{#                        </figure>#}
+
+                        <div class="flex">
+                            <i class="fa fa-check check-blue-sidebar"></i>
+                            <p>Obsługa procedur urzędowych - prowadzanie rejestrów, tworzenie raportów  i zestawień
+                                zgodnie z procedurami urzędowymi.</p>
+                        </div>
+
+                        <div class="flex">
+                            <i class="fa fa-check check-blue-sidebar"></i>
+                            <p>Możliwość sortowania i filtracji danych - tworzenie wykazów adresów budynków dla
+                                poszczególnych miejscowości lub gminy.</p>
+                        </div>
+
+                        <div class="flex">
+                            <i class="fa fa-check check-blue-sidebar"></i>
+                            <p>Pełna archiwizacja modyfikowanych danych oraz odtwarzanie historii każdego obiektu wraz
+                                ze stanem bazy na zadaną datę.</p>
+                        </div>
+
+                        <div class="flex">
+                            <i class="fa fa-check check-blue-sidebar"></i>
+                            <p>Możliwość edycji, usuwania i rejestrowania nowych obiektów – dodawanie, modyfikowanie i
+                                usuwanie danych przestrzennych i opisowych.</p>
+                        </div>
+
+                        <div class="flex">
+                            <i class="fa fa-check check-blue-sidebar"></i>
+                            <p>Automatyczne generowanie gotowych zawiadomień o ustaleniu numeru porządkowego.</p>
+                        </div>
+
+                        <div class="flex">
+                            <i class="fa fa-check check-blue-sidebar"></i>
+                            <p>Automatyczne, realizowane na bieżąco oraz  zgodnie z aktualnie obowiązującymi przepisami
+                                prawa, przekazywanie do państwowego rejestru granic i powierzchni jednostek podziałów
+                                terytorialnych kraju (PRG) nowych bądź zmienionych danych ewidencji adresów i ich
+                                lokalizacji przestrzennej.</p>
+                        </div>
+
+                        <div class="flex">
+                            <i class="fa fa-check check-blue-sidebar"></i>
+                            <p>Obsługa i integracja z innymi bazami danych i usługami – m.in.: GEZ, ortofotomapa, WMS,
+                                WFS.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-5 sajdbar grey-border">
+                    <h3 class="header-sidebar">Możliwość integracji</h3>
+
+                    <div style="display:flex;">
+                        <i class="fa fa-check check-blue-sidebar"></i>
+                        <p>Z pełną gamą modułów SPDP czyli Samorządowej Platformy Danych Przestrzennych</p>
+                    </div>
+                    <div style="display:flex;">
+                        <i class="fa fa-check check-blue-sidebar"></i>
+                        <p>Możliwość udostępniania danych na portalu mapowym INSPIREHUB –
+                            <a href="http://mapa.inspire-hub.pl/"></a>mapa.inspire-hub.pl</p>
+                    </div>
+                    <div style="display:flex;">
+                        <i class="fa fa-check check-blue-sidebar"></i>
+                        <p>Systemami Zarządzania Dokumentacją w gminie (Elektroniczny Obieg Dokumentów, Elektroniczne
+                            Zarządzanie Dokumentacją)</p>
+                    </div>
+                    <div style="display:flex;">
+                        <i class="fa fa-check check-blue-sidebar"></i>
+                        <p>Możliwość uruchomienia e-usług, m.in.: złożenie wniosku o nadania numeru porządkowego</p>
+                    </div>
+
+                    <br>
+
+                    <h3 class="header-sidebar">Podstawa prawna</h3>
+                    <p>
+                        Dyrektywy INSPIRE i Ustawa z dnia 4 marca 2010 r. o infrastrukturze informacji przestrzennej
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script></script>
+
+{% endblock %}
+
+{% block mainimage %}
+{% endblock %}

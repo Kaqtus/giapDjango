@@ -1,0 +1,345 @@
+{% extends "skanowanie_laserowe/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<!-- ******************************** -->
+<!-- tekst "Opis technologii czy coś" -->
+<!-- ******************************** -->
+
+<main>
+
+    <section>
+        <div class="white-bg-row">
+            <div class="content-row">
+                <h2 class="text-align-center">Skaning laserowy najnowszej generacji</h2>
+                <div class="col-group-wide">
+                    <div class="column-1">
+                        <div class="text-column-1">
+                            <p>
+                                Skanowanie laserowe wnętrz to nie tylko wirtualne spacery. To także zdjęcia sferyczne
+                                720 stopni, wykonywane co metr, to chmura punktów, na której można dokonywać pomiarów
+                                z dokładnością do centymetra. To wreszcie nawigacja wewnątrz budynków, która nie wymaga
+                                żadnych nadajników. Wykonujemy skanowanie laserowe 3D przy użyciu innowacyjnego robota.
+                                Korzysta on z 6 aparatów najnowszej generacji i 3 precyzyjnych skanerów laserowych,
+                                wyposażony jest także w czujnik pola magnetycznego i sygnału WiFi. To wszystko pozwala
+                                osiągnąć niedostępną dotychczas prędkość skanowania.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column-2">
+                        <div class="text-column-2">
+                            <p>
+                                Skanowanie laserowe 3D wykonywane przez naszą firmę wyznacza nową erę w branży i jest
+                                odpowiedzią na czwartą rewolucję przemysłową. Nigdy dotąd skanowanie wnętrz nie było
+                                tak proste i tak szybkie! W ciągu jednego dnia jesteśmy w stanie zeskanować nawet do
+                                50 000 metrów kwadratowych. GIAP oferuje również takie usługi dodatkowe, jak tworzenie
+                                planów budynków 2D i 3D wraz z wymiarowaniem, animacje modeli 3D, oraz szkolenia z
+                                przetwarzania chmur punktów.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- opis zalet robota w 3 punktach -->
+
+                <div class="last-content-row-small-padding">
+                    <div class="col-group-3">
+                        <div class="col-group-3-col-1 col-3-about">
+                            <i class="fa fa-check check-blue"></i>
+                            <div>
+                                <p><b>Niespotykana szybkość skanowania</b></p>
+                                <p>Jesteśmy w stanie zeskanować 5,000 m2 powierzchni na godzinę.</p>
+                            </div>
+                        </div>
+                        <div class="col-group-3-col-2 col-3-about">
+                            <i class="fa fa-check check-blue"></i>
+                            <div>
+                                <p><b>Najnowocześniejsza technologia</b></p>
+                                <p>Skaner wykorzystywany przez nas jest wyposażony w 3 laserowe skanery, 6 kamer
+                                    najnowszej generacji, czujnik pola magnetycznego i sygnału WiFi</p>
+                            </div>
+                        </div>
+                        <div class="col-group-3-col-3 col-group-3-col-3-last col-3-about">
+                            <i class="fa fa-check check-blue"></i>
+                            <div>
+                                <p><b>Niezwykła precyzja</b></p>
+                                <p>Wykorzystywane przez nas oprogramowanie pozwala osiągnąć dokładność pomiaru do 1 cm.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- ****************************** -->
+<!-- docelowe branże z font awesome -->
+<!-- ****************************** -->
+
+    <section>
+        <div class=""></div>
+        <div class="grey-bg-row">
+            <div class="content-row">
+                <div class="col-group">
+                    <div class="text-with-icon">
+                        <img src="{% static 'img/przemysl-thin-cien.png' %}" alt="przemysł" style="width: 125px">
+                        <h3>Przemysł</h3>
+                        <p>
+                            Skanowanie laserowe 3D daje możliwość pełnej inwentaryzacji przestrzeni produkcyjnej.
+                            Dane otrzymane w ten sposób można przetwarzać w dowolnym programie CAD lub przeglądarce
+                            internetowej. Możliwość przeprowadzania pomiarów z poziomu przeglądarki w połączeniu z
+                            nawigacją wewnątrz budynków daje innowacyjne narzędzie o szerokim zastosowaniu.
+                        </p>
+                    </div>
+                    <div class="text-with-icon">
+                        <img src="{% static 'img/logistyka-gotowe.png' %}" alt="logistyka" style="width: 125px">
+                        <h3>Logistyka</h3>
+                        <p>
+                            Przestrzeń magazynowa, podobnie jak produkcyjna, często ulega zmianie. Aktualizacja planów
+                            takiej powierzchni staje się prawdziwym wyzwaniem. Skanowanie laserowe wnętrz jest
+                            nowatorskim narzędziem dostosowanym specjalnie do potrzeb branży logistycznej -
+                            umożliwia bieżącą inwentaryzację przestrzeni magazynowej, szybkie przeprowadzanie pomiarów
+                            i nawigację.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-group">
+                    <div class="text-with-icon">
+                        <img src="{% static 'img/hotele-cien.png' %}" alt="hotele" style="width: 125px">
+                        <h3>Hotele</h3>
+                        <p>
+                            Skanowanie laserowe wnętrz to sposób na wyróżnienie się w branży hotelowej. Narzędzie to
+                            umożliwia potencjalnym gościom odbycie wirtualnego spaceru po obiekcie, przyjrzenie się
+                            wnętrzu pokoju, znalezienie drogi na basen czy do hotelowej kawiarni. Spacery dostępne są
+                            przez przeglądarkę internetową, także w wersji na smartfony. Skanowanie laserowe 3D dla
+                            hoteli pozwala otrzymać rzeczywisty plan obiektu w wersji cyfrowej. To unikalne i wygodne
+                            narzędzie do zarządzania całą powierzchnią hotelową.
+                        </p>
+                    </div>
+                    <div class="text-with-icon">
+                        <img src="{% static 'img/zabytki_2-cien.png' %}" alt="zabytki" style="width: 125px">
+                        <h3>Zabytki</h3>
+                        <p>
+                            Skanowanie laserowe 3D zabytków to idealny sposób na inwentaryzację i trwały zapis obiektu
+                            historycznego. Jest to też potężne narzędzie promocji, które rozbudza wyobraźnię turystów i
+                            zachęca ich do odwiedzenia zabytku w rzeczywistości. Skanowanie laserowe LIDAR umożliwia
+                            szybkie i bezproblemowe przesłanie informacji do konserwatora zabytków lub renowatora.
+                            Dzięki wirtualnemu planowi może on dokonać niezbędnych pomiarów za pośrednictwem swojej
+                            przeglądarki internetowej, bez konieczności fizycznej wizyty w obiekcie.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-group">
+                    <div class="text-with-icon">
+                        <img src="{% static 'img/sklepy-cien.png' %}" alt="zabytki" style="width: 125px">
+                        <h3>Retail</h3>
+                        <p>
+                            Skanowanie laserowe LIDAR jest cennym narzędziem dla centrów handlowych i sklepów
+                            wielkopowierzchniowych, które chcą w atrakcyjny sposób zaprezentować swoje usługi i produkty.
+                            Używana przez nas technologia  umożliwia wprowadzenie nawigacji do konkretnych sklepów w centrum, a to
+                            przekłada się na lepsze doświadczenie klientów.  Z kolei opcja  indoor viewer pozwala na
+                            dużo łatwiejsze stworzenie wirtualnego showroomu, formy szczególnie zachęcającej do zakupów.
+                        </p>
+                    </div>
+                    <div class="text-with-icon">
+                        <img src="{% static 'img/biura.png' %}" alt="biura" style="width: 125px">
+                        <h3>Budynki użyteczności publicznej</h3>
+                        <p>
+                            Urzędy lub szpitale to często bardzo duże obiekty, w których znalezienie drogi do celu staje
+                            się prawdziwym wyzwaniem. Skanowanie laserowe 3D pomaga pozbyć się tego problemu i
+                            zmniejszyć stres odwiedzających. Zdjęcia sferyczne ułatwiają znalezienie właściwego pokoju,
+                            a nawigacja zainstalowana na smartfonie bez problemu doprowadza pod same drzwi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- nagłówek PRODUKTY ze zdjęciem -->
+
+<div class="part-size-header-img part-size-header-img-produkty">
+    <div class="siatka siatka-part">
+        <div class="main-h1 h1-not-main">
+            <h1>Produkty</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ********************************************* -->
+<!-- produkty ze zdjęciami, zamiennie rozne strony -->
+<!-- ********************************************* -->
+
+<!-- skaning laserowy -->
+    <section>
+
+        <div class="white-bg-row">
+            <div class="content-row">
+                <div class="two-col-unequal">
+                    <div class="two-col-unequal-30">
+                        <img src="{% static 'img/skaning_laserowy.jpg' %}" class="two-col-unequal-img">
+                    </div>
+                    <div class="two-col-unequal-70">
+                        <h3 class="text-align-center">Skanowanie laserowe</h3>
+                        <p class="p-justify">
+                            Dzięki zastosowaniu innowacyjnego robota możemy skanować bardzo duże
+                            powierzchnie w bardzo krótkim czasie. Skanowanie laserowe 3D to najszybszy sposób na
+                            zobrazowanie przestrzeni. Jego efektem jest chmura punktów, podstawa do stworzenia
+                            trójwymiarowych modeli rzeczywistości. W dalszej kolejności chmura punktów może być
+                            wykorzystana w dowolnym programie klasy CAD, np. AutoCAD, Revit, EliteCAD itp.
+                        </p>
+                        <!-- <a href="#">dowiedz się więcej...</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- IndoorViewer -->
+
+        <div class="grey-bg-row">
+            <div class="content-row">
+                <div class="two-col-unequal">
+                    <div class="two-col-unequal-70">
+                        <h3 class="text-align-center">Indor Viewer</h3>
+                        <p class="p-justify">
+                            Indor Viewer to innowacyjne oprogramowanie dostępne przez przeglądarkę, które pozwala na
+                            przeglądanie zdjęć sferycznych, chmur punktów oraz dokonywanie pomiarów na modelu 3D budynku.
+                            Dzięki Indoor Viewer w łatwy sposób można dodawać na obiektach punkty POI, które posiadają
+                            określone współrzędne geograficzne i wysokość. Jedną z najciekawszych możliwości tego
+                            narzędzia jest tworzenie nawigacji wewnątrz budynków.
+                        </p>
+                        <!-- <a href="#">dowiedz się więcej...</a> -->
+                    </div>
+                    <div class="two-col-unequal-30">
+                        <img src="{% static 'img/skaner_m3.png' %}" class="two-col-unequal-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- plany budynkow -->
+
+        <div class="white-bg-row">
+            <div class="content-row">
+                <div class="two-col-unequal">
+                    <div class="two-col-unequal-30">
+                        <img src="{% static 'img/plany_budynkow.png' %}"
+                             class="two-col-unequal-img">
+                    </div>
+                    <div class="two-col-unequal-70">
+                        <h3 class="text-align-center">Plany 3d i 2d budynków</h3>
+                        <p class="p-justify">
+                            Skanowanie laserowe LIDAR to również tworzenie planów budynków zarówno 2D, z wymiarowaniem
+                            i liczeniem wszystkich powierzchni, jak i 3D, z tworzeniem animacji 3D. Plany budynków
+                            uwzględniają pełną infrastrukturę, z urządzeniami fabrycznymi i wyposażeniem biur włącznie.
+                            Wyniki pracy mają  postać plików wektorowych i gotowych wydruków w formacie PDF. Na życzenie
+                            możemy przygotować plany na dowolnym formacie.
+                        </p>
+                        <!--  <a href="#">dowiedz się więcej...</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- posty -->
+
+
+
+<!-- portfolio/przykładowe realizacje -->
+
+        <section class="grey-bg-row-no-padding">
+            <div class="grid">
+                <figure class="effect-oscar">
+                    <img src="{% static 'img/kosciol.jpg' %}" alt="skan kościoła rodziny"/>
+                    <figcaption>
+                        <div>
+                            <h3>Kościół Wszystkich Świętych</h3>
+                            <p>Skan kościoła Wszystkich Świętych w Warszawie</p>
+                        </div>
+                        <a href="http://46.101.214.32/iv.wszystkich/#?image=365&vlon=-1.13&vlat=0.04&fov=100.0"
+                           target="_blank">Zobacz realizację</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-oscar">
+                    <img src="{% static 'img/automoticon.jpg' %}" alt="automaticon"/>
+                    <figcaption>
+                        <div>
+                            <h3>Targi Automaticon</h3>
+                            <p>Skan wykonany podczas targów Automaticon</p>
+                        </div>
+                        <a href="http://46.101.214.32/iv.Automaticon/#?image=1&vlon=-1.09&vlat=-0.21&fov=100.0"
+                           target="_blank">Zobacz realizację</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-oscar">
+                    <img src="{% static 'img/kosciol_wniebowsoapienia.jpg' %}" alt="skanowanie laserowe 3D kościoła wniebowstąpienia"/>
+                    <figcaption>
+                        <div>
+                            <h3>Parafia Wniebowstąpienia Pańskiego</h3>
+                            <p>Skan Kościoła Wniebowstąpienia Pańskiego w Warszawie</p>
+                        </div>
+                        <a href="http://46.101.214.32/iv.wniebowstapienie/#?image=1&vlon=0.74&vlat=0.16&fov=100.0"
+                        target="_blank">Zobacz realizację</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+                <!-- drugi rzad -->
+    <!--
+                <figure class="effect-oscar">
+                    <img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAgAAAAAJDVhNTZhMzg2LTQ0NjgtNDUxZS1hOWI5LTM3NTU1MGI5OTBhYg.jpg" alt="img12"/>
+                    <figcaption>
+                        <div>
+                            <h3>Stacja metra Świętokrzyska</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <a href="#">Zobacz realizację</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-oscar">
+                    <img src="http://www.laser-scanning-buildings.co.uk/images/side_elevation.gif" alt="img1"/>
+                    <figcaption>
+                        <div>
+                            <h3>Jakiś zabytkowy budynek</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <a href="#">Zobacz realizację</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-oscar">
+                    <img src="http://www.subscan.com/wp-content/uploads/2014/05/Scan-1.png" alt="img1"/>
+                    <figcaption>
+                        <div>
+                            <h3>Zamek w Sosnowcu</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <a href="#">Zobacz realizację</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    -->
+
+    <!-- firmy, z ktorymi wspolpracowalismy -->
+
+        <!--<section>-->
+            <!--<div class="white-bg-row">-->
+                <!--<div class="content-row-small-padding">-->
+                    <!--<div style="margin:0 auto; width: 100%; text-align: center">-->
+                        <!--<img src="http://www.jackedandstrong.com/wp-content/uploads/2016/04/logo-grey-microsoft.png" class="brands-photo">-->
+                        <!--<img src="http://www.jackedandstrong.com/wp-content/uploads/2016/04/logo-grey-microsoft.png" class="brands-photo">-->
+                        <!--<img src="http://www.jackedandstrong.com/wp-content/uploads/2016/04/logo-grey-microsoft.png" class="brands-photo">-->
+                        <!--<img src="http://www.jackedandstrong.com/wp-content/uploads/2016/04/logo-grey-microsoft.png" class="brands-photo">-->
+                        <!--<img src="http://www.jackedandstrong.com/wp-content/uploads/2016/04/logo-grey-microsoft.png" class="brands-photo">-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</section>-->
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "administracja_publiczna/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<!-- Main content -->
+
+<div class="white-bg-row">
+    <section class="content-row">
+        <h1>Kontakt</h1>
+
+        <div class="row content-blue kontakt flex-row-no-sm" itemscope itemtype="http://schema.org/Corporation">
+            <div class="col-md-4 col-sm-4 col-xs-12 two-col-inside-col-1">
+                <h2 itemprop="name" class="header-white brand-name-contact">GIAP sp. z o.o. </h2>
+                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <meta itemprop=”addressCountry” content=”PL”>
+                    <span itemprop="streetAddress">Aleja Komisji Edukacji Narodowej 85/87</span><br>
+                    <span itemprop="postalCode">02-777</span>
+                    <span itemprop="addressLocality">Warszawa</span><br>
+                    <span>NIP: 521-370-98-19</span><br>
+                    <a href="http://www.krs-online.com.pl/giap-sp-z-o-o-krs-2598175.html" target="_blank">GIAP KRS</a>
+                    <meta itemprop="addressRegion" content="Mazowsze">
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <h3 style="color: white">Oddział Lublin:</h3>
+                <span>Droga Męczenników Majdanka 181</span><br>
+                <span>20-325 Lublin</span>
+
+                <h3 style="color: white">Oddział Łódź:</h3>
+                <span>Łąkowa 3/5</span><br>
+                <span>90-562 Łódź</span>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12 two-col-inside-col-2">
+                <span>biuro: </span><a href=”mailto:giap@giap.pl“><span itemprop=”email”>giap@giap.pl</span></a><br>
+                <span>szkolenia: </span><a href=”mailto:szkolenia@giap.pl“><span itemprop=”email”>szkolenia@giap.pl</span></a><br>
+                <span>planowanie przestrzenne: </span><a href=”mailto:planowanie@giap.pl“><span itemprop=”email”>planowanie@giap.pl</span></a><br>
+                <span>biuro Warszawa: </span><a href="tel:222437253"><span itemprop=”telephone”>22 243 72 53</span></a><br>
+                <span>biuro Lublin: </span><a href="tel:500425416"><span itemprop=”telephone”>500 425 416</span></a>
+            </div>
+        </div>
+
+        <figure id="map" class=></figure>
+
+    </section>
+</div>
+
+<script src="{% static 'js/map.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOkQ5yc7eqQ30yQQAAr0eGM1H6JQrTPAs&callback=initMap">
+</script>
+
+{% endblock %}
