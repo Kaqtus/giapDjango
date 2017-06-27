@@ -200,8 +200,9 @@ a {
     background-image:url('http://serwer1640294.home.pl/autoinstalator/wordpress1/wp-content/uploads/2017/03/Trolley_Panorama.jpg');
 }
 
-.full-size-header-image-partners {
-    background-image:url('http://x3.wykop.pl/cdn/c3201142/comment_fs9PZCiMhIxgFeaXFbIPfrZxhjxw42QH.jpg');
+.full-size-header-image-partnerzy {
+    background-image:url('../img/mainPhotos/partnerzy.jpg');
+    background-position: center;
 }
 
 .full-size-header-image-skaning {
@@ -218,6 +219,14 @@ a {
 
 .full-size-header-image-adresat {
     background-image:url('../img/mainPhotos/adresat.jpg');
+}
+
+.full-size-header-image-home-page {
+    background-image:url('../img/mainPhotos/index.jpg');
+}
+
+.full-size-header-image-administracja_publiczna {
+    background-image:url('../img/mainPhotos/administracja_publiczna.jpg');
 }
 
 .siatka {
@@ -259,7 +268,6 @@ a {
 
 .main-h1 {
     position: relative;
-    width: 95%;
     max-width: 750px;
     text-align: center;
     color: #f3f3f3;
@@ -267,7 +275,7 @@ a {
     padding: 20px;
 }
 
-.main-h1 > h1 {
+.main-h1 > h1, .main-h1 > h2 {
     color: white;
     width: auto;
     padding: 10px;

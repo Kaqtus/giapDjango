@@ -39,28 +39,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand active" href="http://127.0.0.1:8000/administracja_publiczna/">
+            <a class="navbar-brand active" href="/">
                 <!--<span style="color: white; font-size: 34px; font-family: GiapFont, sans-serif;">GIAP</span> strona główna-->
                 <img class="nav-logo" src="{% static 'img/logo_administracja.png' %}">
             </a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="produkt">Partnerzy</a></li>
-                <li><a href="kontakt.html">E-usługi</a></li>
-                <li><a href="aktualnosci.html">Aktualności</a></li>
+                <li><a href="/aktualnosci">Aktualności</a></li>
                 <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produkty <b class="caret"></b></a>
+                    <a href="/administracja_publiczna" class="dropdown-toggle" data-toggle="dropdown">
+                        Zakres działalności <b class="caret"></b>
+                    </a>
                     <ul class="dropdown-menu multi-level">
-                        <li><a href="skaning_laserowy_3d.html">Skaning laserowy</a></li>
-                        <li><a href="product.html">IndorViewer</a></li>
-                        <li><a href="plany_budynkow_2D_3D.html">Plany 2D/3D budynków</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Kolejny link</a></li>
+                        <li><a href="/administracja_publiczna">Administracja Publiczna</a></li>
+                        <li><a href="/skanowanie_laserowe">Skanowanie laserowe</a></li>
+{#                        <li class="divider"></li>#}
                     </ul>
-                <li><a href="robot_m3.html">Kontakt</a></li>
+                </li>
+                <li><a href="/kontakt">Kontakt</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="https://giap.pl" target="_blank" style="font-size: 22px;">GIAP</a></li>
@@ -103,17 +100,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

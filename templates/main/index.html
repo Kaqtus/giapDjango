@@ -1,34 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "main/base.html" %}
+{% load staticfiles %}
+{% block content %}
 
-<ul>
-    <li>Administracja publiczna</li>
-    <ul>
-        <li><a href="../administracja_publiczna">Strona główna</a></li>
-        <ul>
-            <li><a href="../administracja_publiczna/produkty">Produkty</a></li>
-            <ul>
-                <li><a href="../administracja_publiczna/turysta">Turysta</a></li>
-                <li><a href="../administracja_publiczna/ekolog">Ekolog</a></li>
-                <li><a href="../administracja_publiczna/adresat">Adresat</a></li>
-            </ul>
-            <li><a href="../administracja_publiczna/aktualnosci">Aktualności</a></li>
-            <ul>
-                <li><a href="../administracja_publiczna/post/10/">Przykładowy post</a></li>
-            </ul>
-            <li><a href="../administracja_publiczna/akty_prawne">Akty prawne</a></li>
-            <li><a href="../administracja_publiczna/integracje">Integracje</a></li>
-            <li><a href="../administracja_publiczna/partnerzy">Partnerzy</a></li>
-        </ul>
-    </ul>
-    <li><a href="../skanowanie_laserowe/">Skanowanie laserowe</a></li>
-</ul>
+<!-- main content -->
+
+{#<div class="white-bg-row">#}
+{#    <div class="content-row" style="max-width:1170px !important;">#}
+{##}
+{##}
+{#        <div class="subindex-tiles">#}
+{##}
+{#            <div class="subindex-tile-admin rounded-2px"#}
+{#                 style="background-image: url({% static 'img/tile_bg-admin.png' %});">#}
+{##}
+{#                <h2>Jakiś<br>nagłówek</h2>#}
+{#                <p>Weoijweof jweofjwe korzystne rozwiązania dla elo.#}
+{#                Sdoijsd oijasdoj oqw mmpojiwe pjkwpoj. Oijqwdo.</p>#}
+{##}
+{#            </div>#}
+{##}
+{#            <div class="subindex-tile-small-in">#}
+{##}
+{#                <div class="subindex-tile-biznes rounded-2px"#}
+{#                     style="background-image: url({% static 'img/tile_bg-biznes.png' %});">#}
+{#                </div>#}
+{##}
+{#                <div class="subindex-tile-mapy rounded-2px"#}
+{#                     style="background-image: url({% static 'img/tile_bg-mapy.png' %});">#}
+{#                </div>#}
+{##}
+{#                <div class="subindex-tile-skan rounded-2px"#}
+{#                     style="background-image: url({% static 'img/tile_bg-test.png' %});">#}
+{#                </div>#}
+{#            </div>#}
+{##}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
 
 
-</body>
-</html>
+
+
+<section>
+    <div class=""></div>
+    <div class="grey-bg-row">
+        <div class="content-row-no-padding">
+            <div class="col-group">
+                <div class="text-with-icon">
+                    <img src="{% static 'img/icons/administracja_publiczna.png' %}" alt="przemysł" style="width: 125px">
+                    <h3>Administracja publiczna</h3>
+                    <p>
+                        Skanowanie laserowe 3D daje możliwość pełnej inwentaryzacji przestrzeni produkcyjnej.
+                        Dane otrzymane w ten sposób można przetwarzać w dowolnym programie CAD lub przeglądarce
+                        internetowej. Możliwość przeprowadzania pomiarów z poziomu przeglądarki w połączeniu z
+                        nawigacją wewnątrz budynków daje innowacyjne narzędzie o szerokim zastosowaniu.
+                    </p>
+                </div>
+                <div class="text-with-icon">
+                    <img src="{% static 'img/icons/skanowanie_laserowe.png' %}" alt="logistyka" style="width: 125px">
+                    <h3>Skanowanie laserowe</h3>
+                    <p>
+                        Przestrzeń magazynowa, podobnie jak produkcyjna, często ulega zmianie. Aktualizacja planów
+                        takiej powierzchni staje się prawdziwym wyzwaniem. Skanowanie laserowe wnętrz jest
+                        nowatorskim narzędziem dostosowanym specjalnie do potrzeb branży logistycznej -
+                        umożliwia bieżącą inwentaryzację przestrzeni magazynowej, szybkie przeprowadzanie pomiarów
+                        i nawigację.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="blue-bg-row">
+    <div class="content-row">
+        <h2 class="text-align-center header-white">O nas</h2>
+        <div class="col-group-wide">
+            <div class="column-1">
+                <div class="text-column-1">
+                    <p class="paragraph-white">
+                        Gospodarczy Instytut Analiz Przestrzennych (GIAP) to dynamicznie rozwijająca się spółka
+                        geoinformatyczna zajmująca się produkcją oprogramowania GIS oraz skanowaniem laserowym w
+                        technologii NavVis. Głównym produktem jest Samorządowa Platforma Danych Przestrzennych (SPDP)
+                        wspierająca realizację zadań administracji samorządowej. W jej skład wchodzą dedykowane
+                        aplikacje dziedzinowe, portale mapowe, e-usługi oraz przetwarzanie danych przestrzennych.
+                        Produkty GIAP dla administracji publicznej tworzone są przy wykorzystaniu zasady otwartości
+                        oraz wieloletniego doświadczenia w implementacji dyrektywy INSPIRE.
+                    </p>
+                </div>
+            </div>
+            <div class="column-2">
+                <div class="text-column-2">
+                    <p class="paragraph-white">
+                        Technologia skanowania laserowego 3D wnętrz budynków, której firma GIAP jest dystrybutorem,
+                        pozwala na precyzyjną inwentaryzację oraz wizualizację przestrzeni. Efektem skanowania 3D jest
+                        nie tylko wirtualny spacer, ale także chmura punktów oraz zdjęcia sferyczne 720 stopni. Firmę
+                        GIAP tworzą młodzi, kreatywni specjaliści z dziedziny informatyki i geoinformatyki oraz
+                        geodezji i gospodarki przestrzennej. Zastosowanie nowych, innowacyjnych technologii, współpraca
+                        oraz integracja z innymi systemami, a także doświadczenie i zaangażowanie sprawia, iż liczba
+                        partnerów i użytkowników produktów firmy GIAP z roku na rok rośnie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="white-bg-row-negative-margin">
+    <div class="content-row" style="max-width:1190px !important;">
+        <section class="post-excerpt-container">
+
+        {% for post in posts %}
+
+            <div class="post-excerpt-small rounded-2px grey-border">
+                <div class="post-excerpt-img">
+                    <img src="{{ post.post_img.url }}">
+                </div>
+                <div class="post-excerpt-text">
+                    <h3><a href="{% url 'single_post' pk=post.pk %}">{{ post.title }}</a></h3>
+                    <p>
+                        {{ post.text|truncatewords:15 }}
+                    </p>
+                    <a href="#">czytaj więcej...</a>
+                </div>
+
+            </div>
+
+        {% endfor %}
+
+        </section>
+    </div>
+</div>
+
+    <section>
+        <div class="grey-bg-row">
+            <div class="content-row-small-padding">
+                <div class="elo" style="display: flex; flex-wrap: wrap; justify-content: space-around">
+                    <img src="{% static 'img/klienci/gmina_debica.png' %}" alt="gmina dębica">
+                    <img src="{% static 'img/klienci/gmina_bogatynia.png' %}" alt="gmina dębica">
+                    <img src="{% static 'img/klienci/gmina_lowicz.png' %}" alt="gmina dębica">
+                    <img src="{% static 'img/klienci/czestochowa.png' %}" alt="gmina dębica">
+                    <img src="{% static 'img/klienci/gmina_nowy_targ.png' %}" alt="gmina dębica">
+                    <img src="{% static 'img/klienci/kluczbork.png' %}" alt="gmina dębica">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+</div>
+
+{% endblock %}

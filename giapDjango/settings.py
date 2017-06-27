@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'skanowanie_laserowe',
     'administracja_publiczna',
+    'main',
     'posts',
 ]
 
